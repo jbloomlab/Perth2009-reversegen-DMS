@@ -6,7 +6,7 @@ RESULTSDIR="results/notebooks"
 
 mkdir -p $RESULTSDIR
 
-NB="analysis_notebook.ipynb"
+NB="analyze_revgen.ipynb"
 
 echo "Running $NB"
 

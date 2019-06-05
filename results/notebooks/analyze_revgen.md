@@ -83,7 +83,7 @@ showPDF(sangerprefix + 'codonmutntcomposition.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_6_0.png)
+![png](analyze_revgen_files/analyze_revgen_6_0.png)
 
 
 The plot above shows that the nucleotide frequencies in the codon mutations were relatively uniform, with perhaps a slightly reduced frequency of `A` relative to the other three nucleotides.
@@ -94,7 +94,7 @@ showPDF(sangerprefix + 'mutationclustering.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_8_0.png)
+![png](analyze_revgen_files/analyze_revgen_8_0.png)
 
 
 The distance between pairs of mutations is also relatively as expected up to 200 nucleotides, with perhaps some more mutation pairs being farther than 200 nt apart than expected.
@@ -105,7 +105,7 @@ showPDF(sangerprefix + 'mutpositions.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_10_0.png)
+![png](analyze_revgen_files/analyze_revgen_10_0.png)
 
 
 The plot above shows the positions of the codon substitutions and any indels for each of the 29 clones. Most clones have single codon mutations, while a few have double and one has triple.
@@ -116,7 +116,7 @@ showPDF(sangerprefix + 'mutpositions_cumulative.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_12_0.png)
+![png](analyze_revgen_files/analyze_revgen_12_0.png)
 
 
 From the plot above, the mutations appear to be relatively evenly distributed across the entire HA gene and mutations are not particularly enriched in a specific region of the gene.
@@ -127,7 +127,7 @@ showPDF(sangerprefix + 'ncodonmuts.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_14_0.png)
+![png](analyze_revgen_files/analyze_revgen_14_0.png)
 
 
 It appears that single, double, and triple-nucleotide mutations are all present.
@@ -139,7 +139,7 @@ showPDF(sangerprefix + 'nmutdist.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_16_0.png)
+![png](analyze_revgen_files/analyze_revgen_16_0.png)
 
 
 The Sanger sequencing analysis showed an average of 1.6 codon substitutions per clone, which is slightly higher than that of the mutant plasmid library used in [Lee et al (2018)](https://www.pnas.org/content/115/35/E8276).
@@ -320,7 +320,7 @@ showPDF(countsplotprefix + '_readstats.pdf', width=500)
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_26_0.png)
+![png](analyze_revgen_files/analyze_revgen_26_0.png)
 
 
 
@@ -329,7 +329,7 @@ showPDF(countsplotprefix + '_readsperbc.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_27_0.png)
+![png](analyze_revgen_files/analyze_revgen_27_0.png)
 
 
 From the reads per barcode plot above, it appears that most of the samples have good sequencing depth, although mutDNA-1 looks a bit undersequenced.
@@ -340,7 +340,7 @@ showPDF(countsplotprefix + '_bcstats.pdf', width=500)
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_29_0.png)
+![png](analyze_revgen_files/analyze_revgen_29_0.png)
 
 
 The plot above shows that the majority of reads are aligned.
@@ -351,7 +351,7 @@ showPDF(countsplotprefix + '_depth.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_31_0.png)
+![png](analyze_revgen_files/analyze_revgen_31_0.png)
 
 
 The sequencing depth across the HA gene appears to be fairly even for each sample. There are small dips near the middle of the subamplicon where sequencing quality drops near the end of R1 and R2. However, we've minimized the number of reads thrown out by poor sequencing quality by trimming each read.
@@ -362,7 +362,7 @@ showPDF(countsplotprefix + '_mutfreq.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_33_0.png)
+![png](analyze_revgen_files/analyze_revgen_33_0.png)
 
 
 The mutation frequencies are highest in the mutDNA samples and lowest in the wtDNA and wtvirus samples. There is a spike in mutation frequency at the first codon in each of the three mutDNA samples as well as the mutvirus samples. This is similar to the observation of a spike in mutation frequency at the first codon for the plasmid mutant libraries in [Lee et al (2018)](https://www.pnas.org/content/115/35/E8276).
@@ -374,7 +374,7 @@ showPDF(countsplotprefix + '_cumulmutcounts.pdf')
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_35_0.png)
+![png](analyze_revgen_files/analyze_revgen_35_0.png)
 
 
 The cumulative mutation counts plot above shows that nearly all codon and amino-acid mutations were sampled at least once in the mutant DNA samples, as desired.
@@ -386,7 +386,7 @@ showPDF(countsplotprefix + '_codonmuttypes.pdf', width=500)
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_37_0.png)
+![png](analyze_revgen_files/analyze_revgen_37_0.png)
 
 
 The mutation frequencies of the wildtype plasmid and the wildtype virus controls are low as expected, and the wildtype virus has a slightly higher mutation frequency than the wildtype plasmid does, because viral replication is an error-prone process. These mutations are exclusively nonsynonymous and synonymous mutations.
@@ -399,7 +399,7 @@ showPDF(countsplotprefix + '_codonntchanges.pdf', width=500)
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_39_0.png)
+![png](analyze_revgen_files/analyze_revgen_39_0.png)
 
 
 All of the mutations in the wtvirus are single nucleotide mutations, which is as expected.
@@ -412,7 +412,7 @@ showPDF(countsplotprefix + '_singlentchanges.pdf', width=500)
 ```
 
 
-![png](analysis_notebook_files/analysis_notebook_41_0.png)
+![png](analyze_revgen_files/analyze_revgen_41_0.png)
 
 
 Although there might be a bit of oxidative damage (`C to A` and `G to T` mutations) in the mutDNA, this doesn't appear to be substantial and we see a fairly even distribution of nucleotide changes, with some enrichment for transition mutations.

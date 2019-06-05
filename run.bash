@@ -17,8 +17,8 @@ jupyter nbconvert \
    --ExecutePreprocessor.timeout=-1 \
    $NB
 
-echo "Converting $NB to pdf"
+echo "Converting $NB to markdown"
 jupyter nbconvert \
    --output-dir $RESULTSDIR \
-   --to pdf \
+   --to markdown \
    $NB
